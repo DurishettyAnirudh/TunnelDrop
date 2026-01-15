@@ -47,3 +47,7 @@ read -p "Enter Remote URL: " endpoint
 
 echo "$endpoint" > "endpoint.conf"
 echo "Endpoint saved to 'endpoint.conf'."
+
+
+read -p "Enter API Key: " API_KEY
+echo "$API_KEY" > ".env"
