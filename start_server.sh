@@ -7,7 +7,7 @@ pkill filebrowser >/dev/null 2>&1
 pkill cloudflared >/dev/null 2>&1
 
 # Start FileBrowser
-cd ~/filebrowser || exit 1
+cd ~/TunnelDrop/filebrowser || exit 1
 echo "FileBrowser is starting..."
 chmod +x ./filebrowser
 ./filebrowser >/dev/null 2>&1 &
@@ -42,7 +42,7 @@ echo "$URL"
 echo "================================"
 echo "Server setup complete."
 
-ENDPOINT_FILE="$HOME/filebrowser/endpoint.conf"
+ENDPOINT_FILE="$HOME/TunnelDrop/filebrowser/endpoint.conf"
 
 # 1. Ensure endpoint file exists
 if [ ! -f "$ENDPOINT_FILE" ]; then
@@ -61,7 +61,7 @@ fi
 
 echo "Destination endpoint: $DEST_ENDPOINT"
 echo "Sending tunnel URL to saved endpoint..."
-ENVIRONMENT="$HOME/filebrowser/.env"
+ENVIRONMENT="$HOME/TunnelDrop/filebrowser/.env"
 
 
 # 1. Ensure endpoint file exists

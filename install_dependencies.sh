@@ -31,7 +31,7 @@ echo "Filebrowser is installed..."
 
 echo "======= FileBrowser Configuration ======="
 echo "Configuring filebrowser..."
-cd ~/filebrowser
+cd ~/TunnelDrop/filebrowser
 ./filebrowser config init
 ./filebrowser config set --root ~/storage/TunnelDrop/filesbrowser
 ./filebrowser config set --address 127.0.0.1
